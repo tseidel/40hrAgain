@@ -15,7 +15,12 @@ public class playerScript : MonoBehaviour
 	public GameObject gcCenter;
 	public GameObject gcBaseBig;
 	public GameObject gcCenterBig;
-	
+
+	public AudioClip earth;
+	public AudioClip mars;
+	public AudioClip jupiter;
+	public AudioClip rocketPack;
+
 	public bool grounded = false;
 	public bool grounded2 = false;
 	public bool readyToJump;
@@ -116,14 +121,20 @@ public class playerScript : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Q))
 		{
 			Physics2D.gravity = new Vector2(0, -3.71f);
+			audio.Stop();
+			audio.PlayOneShot(mars);
 		}
 		if (Input.GetKeyDown(KeyCode.W))
 		{
 			Physics2D.gravity = new Vector2(0, -9.81f);
+			audio.Stop();
+			audio.PlayOneShot(earth);
 		}
 		if (Input.GetKeyDown(KeyCode.E))
 		{
 			Physics2D.gravity = new Vector2(0, -24.79f);
+			audio.Stop();
+			audio.PlayOneShot(jupiter);
 		}
 
 
@@ -134,7 +145,7 @@ public class playerScript : MonoBehaviour
 		playerPosition = this.transform.position;
 		
 		grounded = Physics2D.Linecast(gcBase.transform.position, gcCenter.transform.position, 1 << LayerMask.NameToLayer("Ground"));
-		grounded2 = Physics2D.Linecast(gcBaseBig.transform.position, gcCenterBig.transform.position, 1 << LayerMask.NameToLayer("Ground")) && rigidbody2D.velocity.y<=0;
+		grounded2 = Physics2D.Linecast (gcBaseBig.transform.position, gcCenterBig.transform.position) && rigidbody2D.velocity.y <= 0.05f;
 		spaceAnimator.SetBool ("Grounded", grounded);
 		spaceAnimator.SetBool ("Moving", rigidbody2D.velocity.magnitude > 0.1f);
 		/*
@@ -187,6 +198,7 @@ public class playerScript : MonoBehaviour
 			//Debug.Log ("hi");
 			spaceAnimator.SetBool("Jumping", true);
 			curFuel = Mathf.Max (0, curFuel-1);
+			//audio.PlayOneShot(rocketPack);
 
 		} else {
 			spaceAnimator.SetBool("Jumping", false);
