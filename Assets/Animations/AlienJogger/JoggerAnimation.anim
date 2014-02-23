@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: JoggerAnimation
+  serializedVersion: 4
+  m_AnimationType: 2
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 42c896ec937754975b96e9225ae6816c, type: 3}
+    - time: .0833333358
+      value: {fileID: 21300000, guid: 8b1e16747117f486f8cf631bde45c4a1, type: 3}
+    - time: .166666672
+      value: {fileID: 21300000, guid: 82e3ddb561b66473d90c030a918e764e, type: 3}
+    - time: .25
+      value: {fileID: 21300000, guid: 59063873a94a944ab89796adc22c5c35, type: 3}
+    - time: .333333343
+      value: {fileID: 21300000, guid: 7254cfad721da49f3860f12fb6a145bc, type: 3}
+    - time: .416666657
+      value: {fileID: 21300000, guid: 6aa5e2ac8e4f342d5bbb99842b184083, type: 3}
+    - time: .5
+      value: {fileID: 21300000, guid: b95b7ba9cafe547559831c0c8646ad1d, type: 3}
+    - time: .583333313
+      value: {fileID: 21300000, guid: 0f55be630ee5f4410abda09bbc6cffb5, type: 3}
+    - time: .666666687
+      value: {fileID: 21300000, guid: 70d752aea18eb4a30a9fb507179b32bf, type: 3}
+    - time: .75
+      value: {fileID: 21300000, guid: 7a29fb1712e76405c98359c3f4872397, type: 3}
+    - time: .833333313
+      value: {fileID: 21300000, guid: d6bab732b37a44e1db9baad35bcba4cb, type: 3}
+    - time: .916666687
+      value: {fileID: 21300000, guid: 4fccfb01910564049b580c48957fdfd6, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: d31582257e91c4feea8288d517e248f2, type: 3}
+    - time: 1.08333337
+      value: {fileID: 21300000, guid: 98c73600506184b61ac5e08ae98d7327, type: 3}
+    - time: 1.16666663
+      value: {fileID: 21300000, guid: 6e98b93a3d8e0490e817a60fb2990590, type: 3}
+    - time: 1.25
+      value: {fileID: 21300000, guid: 00d27a30749ae4ced8e6ca81b2d048c2, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 12
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1.33333337
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_Events: []
